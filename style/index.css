@@ -18,6 +18,8 @@ body {
     padding: 1.5rem 0;
     text-align: center;
     font-size: 1.3rem;
+    border-bottom: 4px solid #34db3c;
+    
 }
 
 .cabecalho__menu {
@@ -30,11 +32,32 @@ body {
     color: #ecf0f1;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s ease;
+    background: linear-gradient(90deg, #34db3c, #3498db, #9b59b6, #34db3c);
+    background-size: 300% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: fluidText 5s infinite linear;
+    transition: transform 0.3s ease;
 }
 
 .cabecalho__menu_link:hover {
-    color: #34db3c;
+    transform: scale(1.1);
+    /* Efeito de zoom ao passar o mouse */
+}
+
+@keyframes fluidText {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 /* Main - Apresentação */
@@ -174,15 +197,29 @@ body {
     border-radius: 8px;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
+/* Responsividade  mobile*/
+@media (max-width: 360px) {
+    .cabecalho__menu_link {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    .titulo__destaque{
+        font-size: 0.9rem;
+        text-align: left;
+        margin-left: 0;
+    }
+    .sobre_mim {
+        font-size: 0.9rem;
+    }
     .sobre_mim_e_imagem {
         flex-direction: column;
         text-align: center;
     }
 
     .apresentacao__conteudo_titulo {
-        font-size: 2rem;
+        font-size: 1.5rem;
+        text-align: justify;
     }
 
     .container-itens {
