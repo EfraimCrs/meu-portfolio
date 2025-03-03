@@ -182,7 +182,7 @@ body {
 
 .item h2 {
     font-size: 1.5rem;
-    color: #2c3e50;
+    color: #000000;
     margin-bottom: 1rem;
 }
 
@@ -190,11 +190,62 @@ body {
     font-size: 1rem;
     color: #666;
     margin-bottom: 1rem;
+    text-align: justify;
 }
 
 .item img {
     max-width: 100%;
     border-radius: 8px;
+}
+
+.botao-link {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+    background: linear-gradient(90deg, #34db3c, #3498db);
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: transform 0.5s ease, 0.5s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.botao-link:hover {
+    transform: translateY(-3px);
+    background: linear-gradient(90deg, #3498db, #34db3c);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.rodape {
+    background: linear-gradient(90deg, #ffffff, #34db3c9d, #9b59b6, #000000);
+    background-size: 300% 100%;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    animation: fluidBackground 8s infinite linear;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fluidBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.rodape:hover {
+    animation: fluidBackground 4s infinite linear;
+    box-shadow: 0 -6px 15px rgba(0, 0, 0, 0.3);
 }
 
 /* Responsividade  mobile*/
@@ -221,8 +272,14 @@ body {
         font-size: 1.5rem;
         text-align: justify;
     }
-
+    .destaque-2 {
+        font-size: 2.0rem;
+    }
     .container-itens {
         grid-template-columns: 1fr;
     }
+    .rodape {
+        font-size: 0.9rem;
+    }
+
 }
