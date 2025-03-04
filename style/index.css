@@ -283,3 +283,54 @@ body {
     }
 
 }
+@media (max-width: 768px) {
+    /* Estilos para telas menores que 768px (celulares) */
+
+    .cabecalho {
+        padding: 1rem 0;
+        /* Reduz o padding no cabeçalho */
+        font-size: 1rem;
+        /* Reduz o tamanho da fonte */
+    }
+
+    .cabecalho__menu {
+        flex-direction: column;
+        /* Coloca os links do menu em coluna */
+        gap: 1rem;
+        /* Reduz o espaçamento entre os links */
+    }
+
+    .apresentacao__conteudo_titulo {
+        font-size: 2rem;
+        /* Reduz o tamanho do título principal */
+    }
+
+    .sobre_mim_e_imagem {
+        flex-direction: column;
+        /* Coloca a imagem e o texto em coluna */
+        text-align: center;
+        /* Centraliza o texto */
+    }
+
+    .image img {
+        max-width: 200px;
+        /* Reduz o tamanho da imagem */
+    }
+
+    .container-itens {
+        grid-template-columns: 1fr;
+        /* Coloca os itens em uma única coluna */
+    }
+
+    .item {
+        margin-bottom: 1.5rem;
+        /* Adiciona espaçamento entre os itens */
+    }
+
+    .rodape {
+        font-size: 1rem;
+        /* Reduz o tamanho da fonte no footer */
+        padding: 1rem 0;
+        /* Reduz o padding no footer */
+    }
+}
