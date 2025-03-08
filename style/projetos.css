@@ -1,0 +1,99 @@
+/* Seção de Projetos */
+.titulo__destaque-2 {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.destaque-2 {
+    font-size: 2rem;
+    margin: 2rem 1rem;
+    background: linear-gradient(90deg, #34db3c, #3498db, #9b59b6, #34db3c);
+    background-size: 300% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: fluidText 5s infinite linear;
+}
+
+.projeto {
+    padding: 3rem;
+    background-color: #fff;
+    margin: 2rem auto;
+    max-width: 95%; /* Ajusta melhor em telas pequenas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container-itens {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.item {
+    background-color: #ecf0f1;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.item h2 {
+    font-size: 1.5rem;
+    color: #000000;
+    margin-bottom: 1rem;
+}
+
+.item p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+.item img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.botao-link {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+    background: linear-gradient(90deg, #34db3c, #3498db);
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: transform 0.5s ease, 0.5s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.botao-link:hover {
+    transform: translateY(-3px);
+    background: linear-gradient(90deg, #3498db, #34db3c);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+/* Responsividade para telas até 360px */
+@media (max-width: 360px) {
+    .destaque-2 {
+        font-size: 1.8rem;
+        margin: 1.5rem;
+    }
+
+    .item h2 {
+        font-size: 1.2rem;
+    }
+
+    .item p {
+        font-size: 0.85rem;
+    }
+
+    .botao-link {
+        padding: 0.6rem 1rem;
+    }
+}

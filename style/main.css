@@ -1,0 +1,66 @@
+/* Main - Apresentação */
+
+.apresentacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20%;
+    font-family: "Krona One", serif;
+}
+
+.apresentacao__conteudo {
+    width: 615px;
+
+}
+
+.titulo__destaque-efeito {
+    display: flex;
+    margin: 20px 0;
+    font-size: 55px;
+    text-align: justify;
+    background: linear-gradient(90deg, #34db3c, #3498db, #9b59b6, #34db3c);
+    background-size: 300% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: fluidText 5s infinite linear;
+    font-family: "Krona One", serif;
+}
+
+.titulo-destaque-verde {
+    color: #34db3c;
+    font-family: "Krona One", serif;
+}
+
+.paragrafo {
+    font-size: 20px;
+    color: #ffffff;
+    font-family: "Krona One", serif;
+    
+}
+.image {
+    max-width: 500px;
+    width: 100%;
+    border-radius: 40px;
+}
+/* Responsividade para telas até 360px */
+@media (max-width: 360px) {
+    .apresentacao{
+        flex-direction: column;
+    }
+    .apresentacao__conteudo {
+        
+    }
+    .titulo__destaque-efeito {
+       
+    }
+
+    .paragrafo {
+        
+    }
+
+    .image {
+        
+        
+    }
+}
