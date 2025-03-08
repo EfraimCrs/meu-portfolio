@@ -2,13 +2,14 @@
     padding: 1.5rem;
     text-align: center;
     background-color: #000000;
-    margin: 50% auto;
+    margin: 20% auto;
     max-width: 90%;
+    
 }
 
 .sobre-mim-titulo h1 {
     font-size: 2.5rem;
-    margin: 10px 0px 300px;
+    margin: 10% auto;
     background: linear-gradient(90deg, #34db3c, #3498db, #9b59b6, #34db3c);
     background-size: 300% 100%;
     -webkit-background-clip: text;
@@ -19,35 +20,33 @@
 
 .paragrafo-sobre-mim p {
     font-size: 1rem;
+    font-weight: 150px;
     line-height: 1.6;
     color: white;
-    text-align: justify;
-    margin-bottom: 2rem;
+    text-align: center;
+    font-family: "Krona One", serif;
+    
 
 }
 
 .apresentacao-links {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.8rem;
-    padding-top: 2.0rem;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 60px;
+    flex-wrap: wrap;
 }
 
 .link-botao {
-    background-color: #28a745;
     color: #fff;
-    padding: 0.8rem 1.5rem;
-    border-radius: 5px;
+    font-size: 2.5rem;
+    transition: transform 0.3s ease, color 0.3s ease;
     text-decoration: none;
-    font-size: 1.5rem;
-    transition: background-color 0.3s;
-    width: 80%; /* Deixa os botões mais largos no mobile */
-    text-align: center;
 }
 
 .link-botao:hover {
-    background-color: #218838;
+    transform: scale(1.2);
+    color: #34db3c;
 }
 
 
@@ -81,14 +80,22 @@
     animation: fluidBackground 4s infinite linear;
     box-shadow: 0 -6px 15px rgba(0, 0, 0, 0.3);
 }
+
+
+
 /* Responsividade para telas até 360px */
 @media (max-width: 360px) {
     .sobre-mim-titulo h1 {
         font-size: 2rem;
+        margin: 50px 2px 40px;
     }
 
     .paragrafo-sobre-mim p {
         font-size: 0.9rem;
+    }
+
+    .apresentacao-links {
+        gap: 1rem;
     }
 
     .link-botao {
@@ -101,7 +108,41 @@
         padding: 0.8rem 0;
     }
 }
+/* Responsividade para telas até 769px (Tablets) */
+@media (max-width: 769px) {
+    .sobre-mim-titulo h1 {
+        font-size: 2.2rem;
 
+        margin: 30px 2px 80px;
+    }
+
+    .paragrafo-sobre-mim p {
+        font-size: 1.1rem;
+    }
+    .apresentacao-links {
+        gap: 1.2rem;
+    }
+
+    .link-botao {
+        font-size: 1.2rem;
+        width: 90%;
+    }
+
+    .rodape {
+        font-size: 1rem;
+        padding: 1rem 0;
+    }
+}
+@media (max-width: 1025px) {
+    .apresentacao-links {
+        gap: 1.5rem;
+    }
+
+    .link-botao {
+        font-size: 2.5rem;
+        
+    }
+}
 
     
 

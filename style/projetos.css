@@ -97,3 +97,51 @@
         padding: 0.6rem 1rem;
     }
 }
+/* Responsividade para telas até 769px (Tablets) */
+@media (max-width: 769px) {
+    .destaque-2 {
+        font-size: 1.8rem;
+        padding: 500px 10px 40px;
+    }
+
+    .item h2 {
+        font-size: 1.3rem;
+    }
+
+    .item p {
+        font-size: 0.95rem;  
+    }
+
+    .botao-link {
+        padding: 0.7rem 1.2rem;
+        font-size: 1rem;
+    }
+
+    .container-itens {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+}
+/* Responsividade para telas até 1025px */
+@media (max-width: 1025px) {
+    .destaque-2 {
+        font-size: 1.9rem;
+        margin: 2rem;
+    }
+
+    .item h2 {
+        font-size: 1.4rem;
+    }
+
+    .item p {
+        font-size: 1rem;
+    }
+
+    .botao-link {
+        padding: 0.8rem 1.4rem;
+        font-size: 1.1rem;
+    }
+
+    .container-itens {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}

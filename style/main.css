@@ -45,22 +45,123 @@
 }
 /* Responsividade para telas até 360px */
 @media (max-width: 360px) {
-    .apresentacao{
+    .apresentacao {
+        display: flex;
         flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 5%;
     }
     .apresentacao__conteudo {
-        
+        width: 100%;
+        padding: 0 1rem;
     }
     .titulo__destaque-efeito {
-       
+       font-size: 14px;
+       margin-bottom: 10px;
     }
 
     .paragrafo {
-        
+        font-size: 14px;
+        padding: 0 1rem;
     }
 
     .image {
-        
-        
+        width: 90%;
+        max-width: 280px;
+        margin: 80px 2px 50px;    
+    }
+}
+/* Responsividade para telas até 769px (Tablets) */
+@media (max-width: 769px) {
+    .apresentacao {
+        flex-direction: column;
+        /* Empilhar elementos */
+        align-items: center;
+        text-align: center;
+        margin: 8%;
+    }
+
+    .apresentacao__conteudo {
+        width: 100%;
+        padding: 0 2rem;
+        /* Ajustar margens */
+    }
+
+    .titulo__destaque-efeito {
+        font-size: 40px;
+        /* Reduzir tamanho para melhor encaixe */
+        margin-bottom: 15px;
+    }
+
+    .paragrafo {
+        font-size: 16px;
+        padding: 0 2rem;
+    }
+
+    .image {
+        width: 80%;
+        max-width: 350px;
+        margin-top: 25px;
+    }
+}
+/* Responsividade para telas até 769px (Tablets) */
+@media (max-width: 769px) {
+    .apresentacao {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 8%;
+    }
+
+    .apresentacao__conteudo {
+        width: 100%;
+        padding: 3rem 2rem; 
+    }
+
+    .titulo__destaque-efeito {
+        font-size: 30px;
+        margin-bottom: 35px;
+    }
+
+    .paragrafo {
+        font-size: 16px;
+        padding: 2.5rem 1.0rem 2.0rem;
+    }
+
+    .image {
+        width: 80%;
+        max-width: 350px;
+        margin-top: 25px;
+    }
+}
+/* Responsividade para telas até 1025px */
+@media (max-width: 1025px) {
+    .apresentacao {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 10%;
+    }
+
+    .apresentacao__conteudo {
+        width: 90%;
+        padding: 5rem 2rem;
+    }
+
+    .titulo__destaque-efeito {
+        font-size: 42px;
+        margin-bottom: 20px;
+    }
+
+    .paragrafo {
+        font-size: 18px;
+        padding: 4rem 1rem 3rem;
+    }
+
+    .image {
+        width: 80%;
+        max-width: 350px;
+        margin-top: 25px;
     }
 }

@@ -60,3 +60,33 @@
         font-size: 0.9rem;
     }
 }
+/* Responsividade para telas até 769px (Tablets) */
+@media (max-width: 769px) {
+    .cabecalho {
+        padding: 1.2rem 0;
+        font-size: 1.1rem;
+    }
+
+    .cabecalho__menu {
+        gap: 1.5rem;
+    }
+
+    .cabecalho__menu_link {
+        font-size: 1rem;
+    }
+}
+/* Responsividade para telas até 1025px */
+@media (max-width: 1025px) {
+    .cabecalho {
+        padding: 1.3rem 0;
+        font-size: 1.2rem;
+    }
+
+    .cabecalho__menu {
+        gap: 1.8rem;
+    }
+
+    .cabecalho__menu_link {
+        font-size: 1.1rem;
+    }
+}
