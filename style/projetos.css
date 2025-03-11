@@ -5,7 +5,7 @@
 }
 
 .destaque-2 {
-    font-size: 2rem;
+    font-size: 3rem;
     margin: 2rem 1rem;
     background: linear-gradient(90deg, #34db3c, #3498db, #9b59b6, #34db3c);
     background-size: 300% 100%;
@@ -13,6 +13,7 @@
     background-clip: text;
     color: transparent;
     animation: fluidText 5s infinite linear;
+    padding-bottom: 10%;
 }
 
 .projeto {
@@ -77,71 +78,4 @@
     transform: translateY(-3px);
     background: linear-gradient(90deg, #3498db, #34db3c);
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
-}
-/* Responsividade para telas até 360px */
-@media (max-width: 360px) {
-    .destaque-2 {
-        font-size: 1.8rem;
-        margin: 1.5rem;
-    }
-
-    .item h2 {
-        font-size: 1.2rem;
-    }
-
-    .item p {
-        font-size: 0.85rem;
-    }
-
-    .botao-link {
-        padding: 0.6rem 1rem;
-    }
-}
-/* Responsividade para telas até 769px (Tablets) */
-@media (max-width: 769px) {
-    .destaque-2 {
-        font-size: 1.8rem;
-        padding: 500px 10px 40px;
-    }
-
-    .item h2 {
-        font-size: 1.3rem;
-    }
-
-    .item p {
-        font-size: 0.95rem;  
-    }
-
-    .botao-link {
-        padding: 0.7rem 1.2rem;
-        font-size: 1rem;
-    }
-
-    .container-itens {
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    }
-}
-/* Responsividade para telas até 1025px */
-@media (max-width: 1025px) {
-    .destaque-2 {
-        font-size: 1.9rem;
-        margin: 2rem;
-    }
-
-    .item h2 {
-        font-size: 1.4rem;
-    }
-
-    .item p {
-        font-size: 1rem;
-    }
-
-    .botao-link {
-        padding: 0.8rem 1.4rem;
-        font-size: 1.1rem;
-    }
-
-    .container-itens {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    }
 }

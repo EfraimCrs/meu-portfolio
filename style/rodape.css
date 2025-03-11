@@ -1,15 +1,15 @@
+/* Seção Sobre Mim */
 .sobre-mim-section {
     padding: 1.5rem;
     text-align: center;
     background-color: #000000;
-    margin: 20% auto;
+    margin: 10% auto;
     max-width: 90%;
-    
 }
 
 .sobre-mim-titulo h1 {
     font-size: 2.5rem;
-    margin: 10% auto;
+    margin: 5% auto;
     background: linear-gradient(90deg, #34db3c, #3498db, #9b59b6, #34db3c);
     background-size: 300% 100%;
     -webkit-background-clip: text;
@@ -20,26 +20,24 @@
 
 .paragrafo-sobre-mim p {
     font-size: 1rem;
-    font-weight: 150px;
+    font-weight: 400;
     line-height: 1.6;
     color: white;
     text-align: center;
     font-family: "Krona One", serif;
-    
-
 }
 
 .apresentacao-links {
     display: flex;
     justify-content: center;
     gap: 1.5rem;
-    margin-top: 60px;
+    margin-top: 40px;
     flex-wrap: wrap;
 }
 
 .link-botao {
     color: #fff;
-    font-size: 2.5rem;
+    font-size: 2rem;
     transition: transform 0.3s ease, color 0.3s ease;
     text-decoration: none;
 }
@@ -48,7 +46,6 @@
     transform: scale(1.2);
     color: #34db3c;
 }
-
 
 .rodape {
     background: linear-gradient(90deg, #ffffff, #34db3c9d, #9b59b6, #000000);
@@ -80,27 +77,24 @@
     animation: fluidBackground 4s infinite linear;
     box-shadow: 0 -6px 15px rgba(0, 0, 0, 0.3);
 }
-
-
-
-/* Responsividade para telas até 360px */
-@media (max-width: 360px) {
+@media screen and (max-width: 360px) {
     .sobre-mim-titulo h1 {
-        font-size: 2rem;
-        margin: 50px 2px 40px;
+        font-size: 3rem;
+        padding-top: 50%;
     }
 
     .paragrafo-sobre-mim p {
-        font-size: 0.9rem;
-    }
-
-    .apresentacao-links {
-        gap: 1rem;
+        font-size: 0.8rem;
+        text-align: justify;
+        padding-top: 20%;
+        padding-bottom: 20%;
     }
 
     .link-botao {
-        font-size: 1rem;
+        display: block;
+        font-size: 3rem;
         width: 100%;
+        
     }
 
     .rodape {
@@ -108,41 +102,48 @@
         padding: 0.8rem 0;
     }
 }
-/* Responsividade para telas até 769px (Tablets) */
-@media (max-width: 769px) {
+@media screen and (max-width: 769px) {
     .sobre-mim-titulo h1 {
-        font-size: 2.2rem;
-
-        margin: 30px 2px 80px;
+        font-size: 3rem;
+        padding-top: 50%;
     }
 
     .paragrafo-sobre-mim p {
-        font-size: 1.1rem;
-    }
-    .apresentacao-links {
-        gap: 1.2rem;
+        font-size: 0.8rem;
+        text-align: justify;
+        padding-top: 20%;
+        padding-bottom: 20%;
     }
 
     .link-botao {
-        font-size: 1.2rem;
-        width: 90%;
+    font-size: 3rem;
     }
 
     .rodape {
-        font-size: 1rem;
-        padding: 1rem 0;
+        font-size: 0.9rem;
+        padding: 0.8rem 0;
     }
 }
-@media (max-width: 1025px) {
-    .apresentacao-links {
-        gap: 1.5rem;
+@media screen and (max-width: 1100px) {
+    .sobre-mim-titulo h1 {
+        font-size: 3rem;
+        padding-top: 10%;
+    }
+
+    .paragrafo-sobre-mim p {
+        font-size: 1rem;
+        text-align: justify;
+        padding-top: 10%;
+        padding-bottom: 10%;
     }
 
     .link-botao {
-        font-size: 2.5rem;
-        
+        font-size: 3rem;
+    }
+
+    .rodape {
+        font-size: 0.9rem;
+        padding: 0.8rem 0;
     }
 }
-
-    
 

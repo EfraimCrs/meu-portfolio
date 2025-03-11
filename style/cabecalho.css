@@ -12,6 +12,7 @@
     display: flex;
     justify-content: center;
     gap: 2rem;
+    flex-wrap: wrap;
 }
 
 .cabecalho__menu_link {
@@ -25,11 +26,11 @@
     color: transparent;
     animation: fluidText 5s infinite linear;
     transition: transform 0.3s ease;
+    font-size: 1rem;
 }
 
 .cabecalho__menu_link:hover {
     transform: scale(1.1);
-    /* Efeito de zoom ao passar o mouse */
 }
 
 @keyframes fluidText {
@@ -53,40 +54,15 @@
     }
 
     .cabecalho__menu {
+        flex-direction: column;
+        align-items: center;
         gap: 0.8rem;
+
     }
 
     .cabecalho__menu_link {
         font-size: 0.9rem;
-    }
-}
-/* Responsividade para telas até 769px (Tablets) */
-@media (max-width: 769px) {
-    .cabecalho {
-        padding: 1.2rem 0;
-        font-size: 1.1rem;
-    }
-
-    .cabecalho__menu {
-        gap: 1.5rem;
-    }
-
-    .cabecalho__menu_link {
-        font-size: 1rem;
-    }
-}
-/* Responsividade para telas até 1025px */
-@media (max-width: 1025px) {
-    .cabecalho {
-        padding: 1.3rem 0;
-        font-size: 1.2rem;
-    }
-
-    .cabecalho__menu {
-        gap: 1.8rem;
-    }
-
-    .cabecalho__menu_link {
-        font-size: 1.1rem;
+        text-align: center;
+        display: block;
     }
 }
