@@ -2,8 +2,8 @@
 .sobre-mim-section {
     padding: 1.5rem;
     text-align: center;
-    background-color: #000000;
-    margin: 10% auto;
+    background-color: #16161661;
+    margin: 5% auto;
     max-width: 90%;
 }
 
@@ -25,6 +25,7 @@
     color: white;
     text-align: center;
     font-family: "Krona One", serif;
+    
 }
 
 .apresentacao-links {
