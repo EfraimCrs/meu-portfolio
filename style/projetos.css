@@ -1,11 +1,13 @@
 /* Seção de Projetos */
 .titulo__destaque-2 {
     text-align: center;
-    
+    margin: 2rem 0;
 }
 
 .destaque-2 {
     font-size: 3rem;
+    margin: 2rem 1rem;
+    padding-bottom: 10%;
     background: linear-gradient(90deg, #34db3c, #3498db, #9b59b6, #34db3c);
     background-size: 300% 100%;
     -webkit-background-clip: text;
@@ -16,7 +18,7 @@
 }
 
 .projeto {
-    padding: 2rem;
+    padding: 3rem;
     background-color: #fff;
     margin: 2rem auto;
     max-width: 95%; /* Ajusta melhor em telas pequenas */

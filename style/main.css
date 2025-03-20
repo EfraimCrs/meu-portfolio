@@ -11,8 +11,7 @@
 
 .apresentacao__conteudo {
     width: 615px;
-   
-
+    max-width: 100%;
 }
 .titulo__destaque-efeito {
     display: flex;
