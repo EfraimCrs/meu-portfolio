@@ -1,14 +1,4 @@
 /* Main - Apresentação */
-
-.apresentacao {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 20%;
-    font-family: "Krona One", serif;
-    flex-wrap: wrap;
-}
-
 .apresentacao__conteudo {
     width: 615px;
     max-width: 100%;

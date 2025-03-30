@@ -2,10 +2,11 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto portfolio do zero</title>
-
     <link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="style/index.css">
     <link rel="stylesheet" href="resume.html">
     <link rel="stylesheet" href="style/cabecalho.css">
@@ -26,19 +27,64 @@
             <a class="cabecalho__menu_link" href="#">PROJETOS</a>
         </nav>
     </header>
-    <main class="apresentacao">
-        <section class="apresentacao__conteudo">
-            <div class="conteudo">
-                <h1 class="titulo__destaque-efeito">Development Front-End</h1>
-                <h1 class="apresentacao__conteudo_titulo">Construindo o Futuro com Código. <strong class="titulo-destaque-verde">Um passo hoje, infinitas conquistas amanhã.</strong></h1>
-                <p class="paragrafo">Transformando Ideias em Realidade</p>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="img-fluid d-md-none" src="assets/mobile/banner1-mobile.png" alt="">
+                <img class="img-fluid d-none d-md-block d-xl-none" src="assets/tablet/banner1-tablet.png"alt="">
+                <img class="w-100 img-fluid d-none d-xl-block" src="assets/desktop/banner1-desktop.png"alt="">
             </div>
-        </section>
-        <img class="image" src="assets/my-1s.jpg" alt="minha foto">
-
-
+            <div class="carousel-item">
+                <img class="img-fluid d-md-none" src="assets/mobile/banner2-mobile.png" alt="">
+                <img class="img-fluid d-none d-md-block d-xl-none" src="assets/tablet/banner2-tablet.png" alt="">
+                <img class="w-100 img-fluid d-none d-xl-block" src="assets/desktop/banner2-desktop.png" alt="">
+                
+            </div>
+            <div class="carousel-item">
+                <img class="img-fluid d-md-none" src="assets/mobile/banner3-mobile.png" alt="">
+                <img class="img-fluid d-none d-md-block d-xl-none" src="assets/tablet/banner3-tablet.png" alt="">
+                <img class="w-100 img-fluid d-none d-xl-block" src="assets/desktop/banner3-desktop.png" alt="">
+                
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <main class="container mt-5">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <section>
+                    <h1 class="titulo__destaque-efeito">Development Front-End</h1>
+                    <h1 class="apresentacao__conteudo_titulo">
+                        Construindo o Futuro com Código.
+                        <strong class="titulo-destaque-verde">Um passo hoje, infinitas conquistas amanhã.</strong>
+                    </h1>
+                </section>
+            </div>
+            <div class="col-md-6 text-center">
+                <img class="img-fluid" src="assets/my-1s.jpg" alt="minha foto">
+            </div>
+        </div>
     </main>
+    
     <section class="titulo__destaque-2">
+        <p class="paragrafo">Transformando Ideias em Realidade</p>
         <h1 class="destaque-2">PROJETOS</h1>
     </section>
     <section class="projeto">
@@ -132,5 +178,6 @@
     <footer class="rodape">
         Obrigado por visitar meu portfólio
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
