@@ -7,8 +7,9 @@
 }
 
 body {
-    box-sizing: border-box;
-    height: 100vh;
-    color: #ffffff;
-    background-color: rgb(0, 0, 0);
+    min-width: 100vh;
+    background: url(../assets/image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
 }

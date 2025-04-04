@@ -5,8 +5,8 @@
 }
 .titulo__destaque-efeito {
     display: flex;
-    margin: 20px 0;
-    font-size: 55px;
+    margin: 20px 0px;
+    font-size: 45px;
     text-align: justify;
     background: linear-gradient(90deg, #34db3c, #3498db, #9b59b6, #34db3c);
     background-size: 300% 100%;
@@ -16,12 +16,32 @@
     animation: fluidText 5s infinite linear;
     font-family: "Krona One", serif;
 }
-
+.apresentacao__conteudo_titulo {
+    color: aliceblue;
+}
 .titulo-destaque-verde {
     color: #34db3c;
     font-family: "Krona One", serif;
 }
-
+.grid-icone {
+    display: flex;
+    grid-template-columns: repeat(3, auto);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.icone-1 {
+    font-size: 100px;
+    color: #E44D26;
+}
+.icone-2 {
+    font-size: 100px;
+    color: #264DE4;
+}
+.icone-3 {
+    font-size: 100px;
+    color: #F7DF1E;
+}
 .paragrafo {
     font-size: 20px;
     color: #ffffff;
